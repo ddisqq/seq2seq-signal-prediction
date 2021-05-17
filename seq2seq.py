@@ -11,10 +11,10 @@ from neuraxle.steps.data import EpochRepeater, DataShuffler
 from neuraxle.steps.flow import TrainOnlyWrapper
 from neuraxle.steps.loop import ForEachDataInput
 from sklearn.metrics import mean_squared_error
-from tensorflow_core.python.client import device_lib
-from tensorflow_core.python.keras import Input, Model
-from tensorflow_core.python.keras.layers import GRUCell, RNN, Dense
-from tensorflow_core.python.training.adam import AdamOptimizer
+from tensorflow.python.client import device_lib
+from tensorflow.python.keras import Input, Model
+from tensorflow.python.keras.layers import GRUCell, RNN, Dense
+from tensorflow.python.training.adam import AdamOptimizer
 
 from datasets import generate_data
 from datasets import metric_3d_to_2d_wrapper
